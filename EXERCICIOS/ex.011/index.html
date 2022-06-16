@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <hr>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-P.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-M.png" type="image/png">
+        <img src="imagens/foto-G.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audios em html.</p>
+    <!--<audio src="audio/bensound-pianomoment.mp3" controls></audio> 
+    <!---- compativel MP3, WAV, OGG-->
+    <audio controls="metadata">
+    <source src="audio/bensound-pianomoment.mp3" type="audio/mpeg">
+    <source src="audio/bensound-pianomoment.ogg" type="audio/ogg">
+    <source src="audio/bensound-pianomoment.wav" type="audio/wav">
+    <p>Infelismente seu navegador não consegue reproduzir o audio. <a href="audio/bensound-pianomoment.mp3">Clique aqui para baixar o arquivo.</a></p>
+    </audio>
+    <br>
+    <p>Estudo do cap de Ezequiel 34.</p>
+    <audio controls>
+        <source src="audio/Ezequiel 34 ovelhas de Deus.m4a" type="audio/mp3">
+    </audio>
+</body>
+</html>
