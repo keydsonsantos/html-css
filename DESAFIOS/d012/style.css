@@ -57,19 +57,40 @@ section {
     margin: auto;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.normal {
     background-color: white;
     color: black;
+    padding-left: 45px;
 }
 
 section.imagem {
    background-color: rgb(27, 27, 27); 
    color: white;
+   box-shadow: inset 6px 6px 13px 0px black;
+   background-attachment: fixed;
+}
+
+section#img01 {
+    background-image: url('img/16-jerusalm-1.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('img/ben-yehuda-street.jpg');
+    background-position: center center;
+    background-size: cover;
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.555);
+    background-color: rgba(0, 0, 0, 0.575);
     width: 480px;
+    padding-top: 15px;
+    padding-left: 15px;
 }
 
 footer {
