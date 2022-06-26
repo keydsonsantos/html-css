@@ -15,7 +15,7 @@
 
 html, body {
     min-height: 100%vh; /*vh=altura/ vw=largura*/
-    background-color: darkgray;
+    background-color: darkgrey;
 }
 
 header {
