@@ -19,6 +19,8 @@ html, body {
 }
 
 header {
+    max-width: 900px;
+    margin: auto;
     background-color: black;
     color: white;
     text-align: center;
@@ -48,6 +50,7 @@ header a:hover, footer a:hover {
 }
 
 section {
+    max-width: 900px;
     font-family: var(--fonte2);
     padding-top: 10vh;
     padding-bottom: 10vh;
