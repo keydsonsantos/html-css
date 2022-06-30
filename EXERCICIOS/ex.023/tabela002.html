@@ -10,14 +10,35 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        body > h1 {
+            color: black;
+            padding: 8px;
+            margin: 30px;
+            text-align: center;
+        }
+
         table {
             width: 500px;
+            margin: auto;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        th {
+            background-color: black;
+            color: white;
         }
 
         td, th {
-            border: 1px solid black;
+            border: 1.2px solid black;
             padding: 8px;
+        }
+
+        caption {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            background-color: rgb(179, 179, 179);
+            padding: 10px;
         }
 
         thead {
@@ -25,23 +46,38 @@
             color: white;
         }
 
+        thead > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(odd) { /*odd = impar ou 2n-1*/
+            background-color: rgb(179, 179, 179);
+        }
+
+        tbody > tr:nth-child(even) { /*even = par ou 2n*/
+            background-color: white;
+        }
+
         th.posição {
             width: 100px;
         }
 
         tfoot {
-            background-color: gray;
+            background-color: black;
             color: white;
         }
     </style>
 </head>
 <body>
     <h1>
-        Uso de tabelas grandes
+        USO DE TABELAS GRANDES
     </h1>
         <!--
             ANATOMIA PARA TABELAS GRANDES
             TABLE
+                CAPTION = LEGENDA
                 THEAD = CABEÇA
                             TR, TD, TH
                 TBODY = MEIO
@@ -51,45 +87,171 @@
         -->
         <table>
             <thead>
+                <CAption>População das Unidades Federativas</CAption>
                 <th class="posição">Posição</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th> <!--col = mesma coluna-->
+                <th scope="col" style="width: 50px;">População</th>
             </thead>
 
             <tbody>
                 <tr>
-                    <td>01</td>
+                    <td style="text-align: center;">01</td>
                     <td>São Paulo</td>
-                    <td>46 649 132</td>
+                    <td class="num">46 649 132</td>
                 </tr>
                 <tr>
-                    <td>02</td>
+                    <td style="text-align: center;">02</td>
                     <td>Minas gerais</td>
-                    <td>21 411 923</td>
+                    <td class="num">21 411 923</td>
                 </tr>
                 <tr>
-                    <td>03</td>
+                    <td style="text-align: center;">03</td>
                     <td>Rio de Janeiro</td>
-                    <td>17 463 349</td>
+                    <td class="num">17 463 349</td>
                 </tr>
                 <tr>
-                    <td>04</td>
+                    <td style="text-align: center;">04</td>
                     <td>Bahia</td>
-                    <td>14 016 906</td>
+                    <td class="num">14 016 906</td>
                 </tr>
                 <tr>
-                    <td>05</td>
+                    <td style="text-align: center;">05</td>
                     <td>Paraná</td>
-                    <td>11 597 484</td>
+                    <td class="num">11 597 484</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">06</td>
+                    <td>Rio grande do Sul</td>
+                    <td class="num">11 466 630</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">07</td>
+                    <td>Pernambuco</td>
+                    <td class="num">9 674 793</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">08</td>
+                    <td>Ceará</td>
+                    <td class="num">9 240 580</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">09</td>
+                    <td>Pará</td>
+                    <td class="num">8 777 124</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">10</td>
+                    <td>Santa Catarina</td>
+                    <td class="num">7 338 473</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">01</td>
+                    <td>São Paulo</td>
+                    <td class="num">46 649 132</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">02</td>
+                    <td>Minas gerais</td>
+                    <td class="num">21 411 923</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">03</td>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 463 349</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">04</td>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">05</td>
+                    <td>Paraná</td>
+                    <td class="num">11 597 484</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">06</td>
+                    <td>Rio grande do Sul</td>
+                    <td class="num">11 466 630</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">07</td>
+                    <td>Pernambuco</td>
+                    <td class="num">9 674 793</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">08</td>
+                    <td>Ceará</td>
+                    <td class="num">9 240 580</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">09</td>
+                    <td>Pará</td>
+                    <td class="num">8 777 124</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">10</td>
+                    <td>Santa Catarina</td>
+                    <td class="num">7 338 473</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">01</td>
+                    <td>São Paulo</td>
+                    <td class="num">46 649 132</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">02</td>
+                    <td>Minas gerais</td>
+                    <td class="num">21 411 923</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">03</td>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 463 349</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">04</td>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">05</td>
+                    <td>Paraná</td>
+                    <td class="num">11 597 484</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">06</td>
+                    <td>Rio grande do Sul</td>
+                    <td class="num">11 466 630</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">07</td>
+                    <td>Pernambuco</td>
+                    <td class="num">9 674 793</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">08</td>
+                    <td>Ceará</td>
+                    <td class="num">9 240 580</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">09</td>
+                    <td>Pará</td>
+                    <td class="num">8 777 124</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">10</td>
+                    <td>Santa Catarina</td>
+                    <td class="num">7 338 473</td>
                 </tr>
 
             </tbody>
 
             <tfoot>
                 <tr>
-                    <th>Total de habitantes</th>
-                    <td>0000</td>
-                    <td>0000</td>
+                    <th scope="row">Total</th> <!--row mesma linha--> 
+                    <td>Estados = 10</td>
+                    <td>157.636.394</td>
                 </tr>
             </tfoot>
         </table>
