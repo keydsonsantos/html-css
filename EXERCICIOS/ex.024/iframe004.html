@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe {
+            width: 90vh;
+            height: 400px;
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+<body>
+    <h1> Meu site principal</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus totam consectetur eligendi! Eum dicta veritatis ab magni earum omnis aliquid ipsam, perspiciatis illum esse mollitia eaque, dolore, hic voluptate.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos beatae, harum dicta alias quos est quod illum tempore iure aliquid libero porro. Commodi voluptate doloribus ipsam saepe, maxime deleniti ipsum?
+    </p>
+
+    <iframe src="paginas.extras/pagina004.html" sandbox="allow-same-origin allow-forms" referrerpolicy="no referrer">
+        seu navegador não é compativel com isso...
+    </iframe> <!--sandbox="sandbox" e referrerpolicy="no referrer" são metodos de segurança maxima contra coleta de dados maliciosos dentro dos seus iframe. 
+              sandbox="allow-same-origin" permite conteudos de mesma origem.
+              "allow-forms" pernite uso de formulários, "allow-scripts" permite scripts. -->
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate eaque itaque ipsam nam aperiam molestiae. Suscipit, tempore mollitia? Nobis vero nemo, debitis eius perferendis nulla distinctio? Magnam cupiditate vero voluptate.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolor quidem rem doloremque error earum quo ad, ullam perspiciatis sapiente dolorum provident esse. Corrupti saepe adipisci, eius earum ipsum aliquid.
+    </p>
+
+</body>
+</html>
