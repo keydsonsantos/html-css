@@ -5,15 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: rgb(160, 160, 160);
+            padding: 10px;
+            min-width: 320px;
+            max-width: 600px;
+        }
+
+        h1 {
+            text-shadow: 2px 2px 3px black;
+        }
+
+        p {
+            font-weight: bolder;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        input {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
 
     <h1>Teste de formulário</h1>
 
+    <hr>
+
     <form action="formulario.php" method="post">
         <p>
             <label for="inome">Nome</label>
-            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="nome completo" autocomplete="nome" size="50">
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="nome completo" autocomplete="nome" size="54">
+        </p>
+
+        <p>
+            <label for="iema">E-mail</label>
+            <input type="email" name="ema" id="iema" required size="30">
+
+            <label for="ifon">Contato</label>
+            <input type="tel" name="fon" id="ifon" size="8">
         </p>
 
         <p>
