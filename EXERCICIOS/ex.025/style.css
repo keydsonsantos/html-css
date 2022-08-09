@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgb(160, 160, 160);
+    padding: 10px;
+    min-width: 320px;
+    max-width: 600px;
+}
+
+h1 {
+    text-shadow: 2px 2px 3px black;
+}
+
+p {
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black;
+}
+
+input {
+    border: 1px solid black;
+}
